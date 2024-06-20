@@ -1,0 +1,35 @@
+﻿@model ConfiguarViewModel
+@{
+    Layout = "_LayoutEncargado";
+    ViewData["Title"] = "Modificar parámetros";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8 col-sm-10">
+            <form asp-action="Configurar" method="post" class="formulario m-3">
+                <h3 class="text-center mb-4">Actualizar Parámetros</h3>
+                @Html.AntiForgeryToken()
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <!-- Cantidad de items por página -->
+                <div class="form-group">
+                    <label asp-for="PageSize" class="control-label">Elementos por página</label>
+                    <input type="number" asp-for="PageSize" placeholder="Ingrese la nueva cantidad..." class="form-control" required />
+                    <span asp-validation-for="PageSize" class="text-danger"></span>
+                    <p class="text-muted">Valor actual: <strong>@Model.PageSize</strong></p>
+                </div>
+                <!-- Cantidad de items por página -->
+                <div class="form-group">
+                    <label asp-for="Tope" class="control-label">Tope de cantidad de artículos por movimiento</label>
+                    <input type="number" asp-for="Tope" placeholder="Ingrese la nueva cantidad..." class="form-control" required />
+                    <span asp-validation-for="Tope" class="text-danger"></span>
+                    <p class="text-muted">Valor actual: <strong>@Model.Tope</strong></p>
+                </div>
+                <button type="submit" class="botonVerde mb-3">Actualizar</button>
+                <span class="text-danger">@ViewBag.Error</span>
+                <span class="text-success">@ViewBag.Success</span>
+            </form>
+        </div>
+    </div>
+</div>

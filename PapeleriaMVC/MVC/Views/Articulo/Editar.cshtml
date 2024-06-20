@@ -1,0 +1,39 @@
+﻿@model RegistroArticuloViewModel
+
+@{
+    ViewData["Title"] = "Editar Usuario";
+}
+
+<form asp-action="Editar" class="formulario col-lg-6 col-md-8 col-sm-10 p-4">
+    @Html.AntiForgeryToken()
+    <h3>@ViewData["Title"]</h3>
+    <div class="form-group">
+        <label asp-for="Nombre">Nombre</label>
+        <input asp-for="Nombre" class="form-control" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Descripcion">Descripcion</label>
+        <input asp-for="Descripcion" class="form-control" />
+        <span asp-validation-for="Descripcion" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Codigo">Codigo</label>
+        <input asp-for="Codigo" class="form-control" type="string" />
+        <span asp-validation-for="Codigo" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Precio">Precio</label>
+        <input asp-for="Precio" class="form-control" type="number" />
+        <span asp-validation-for="Precio" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <button type="submit" class="botonVerde text-light">Guardar cambios</button>
+    </div>
+    <div class="form-group">
+        <span class="text-danger">@ViewBag.Error</span>
+    </div>
+</form>

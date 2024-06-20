@@ -1,0 +1,40 @@
+﻿@model ResumenViewModel
+
+@{
+    Layout = "_LayoutEncargado";
+    ViewData["Title"] = "Resumen de stock";
+}
+
+<div class="container my-2">
+    <div class="justify-content-between row d-flex align-items-center">
+        <h1 class="col-8 text-light">@ViewData["Title"]</h1>
+        <div class ="col-12 text-center col-md-4">
+            <div class ="mb-2">
+                <a href="@Url.Action("Registro", "Articulo")" class="botonVerde text-light">
+                    + Crear artículo
+                </a>
+            </div>
+            <div>
+                <a href="@Url.Action("Registro", "Movimiento")" class="botonVerde text-light">
+                    + Crear movimiento
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    @foreach (var resumen in Model.ResumenStocks)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="carta h-100">
+                <div class="card-header bg-dark text-light">
+                    <h4 class="m-0 text-warning">AÑO - @resumen.Año</h4>
+                </div>
+                <div class="card-body bg-dark text-light">
+                    <p>Tipo: <span class="text-primary"><b>@resumen.TipoMovimientoNombre</b></span></p>
+                    <p>Cantidad: <span class="text-success"><b>@resumen.Cantidad</b></span></p>
+                </div>
+            </div>
+        </div>
+    }
+</div>

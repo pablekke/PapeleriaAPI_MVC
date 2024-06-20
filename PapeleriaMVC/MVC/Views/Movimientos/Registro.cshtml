@@ -1,0 +1,50 @@
+﻿@model RegistroMovimientoViewModel
+
+@{
+    Layout = "_LayoutEncargado";
+    ViewData["Title"] = "Registro de movimiento";
+}
+
+<div class="row justify-content-center align-items-center">
+    <form asp-action="Registro" method="post" class="formulario col-lg-6 col-md-8 col-sm-10">
+        @Html.AntiForgeryToken()
+        <h3 class="mb-3">@ViewData["Title"]</h3>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="ArticuloId" class="control-label">Artículo</label>
+            <select asp-for="ArticuloId" class="form-control" asp-items="@(new SelectList(Model.Articulos, "ArticuloId", "Nombre"))">
+                <option value="">Selecciona un artículo</option>
+            </select>
+            <span asp-validation-for="ArticuloId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="TipoMovimientoId" class="control-label">Tipo de Movimiento</label>
+            <select asp-for="TipoMovimientoId" class="form-control" asp-items="@(new SelectList(Model.Tipos, "TipoMovimientoId", "Nombre"))">
+                <option value="">Selecciona un tipo de movimiento</option>
+            </select>
+            <span asp-validation-for="TipoMovimientoId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="CantidadMovida" class="control-label">Cantidad Movida</label>
+            <input asp-for="CantidadMovida" class="form-control" />
+            <span asp-validation-for="CantidadMovida" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="botonVerde text-white rounded-3 w-100">Registrar movimiento</button>
+        </div>
+        <div class="form-group">
+            <span class="text-danger">@ViewBag.Error</span>
+        </div>
+
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

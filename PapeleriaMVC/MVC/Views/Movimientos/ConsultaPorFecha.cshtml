@@ -1,0 +1,110 @@
+﻿@using Domain
+@model ConsultaPorArticuloYTipoViewModel
+
+@{
+    ViewData["Title"] = "Consulta por Fecha";
+    string fechaHoy = DateTime.Now.ToString("yyyy-MM-dd");
+}
+
+<h2 class="text-light">@ViewData["Title"]</h2>
+
+<form asp-action="ConsultaPorFecha" method="post" class="bg-search rounded py-3 px-1 mb-2">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Selección de Fecha de Inicio -->
+            <div class="col-12 col-md-6 col-lg-6 mb-2 mb-md-0">
+                <input type="date" name="fechaInicio" class="form-control" max="@fechaHoy" required>
+            </div>
+
+            <!-- Selección de Fecha de Fin -->
+            <div class="col-12 col-md-6 col-lg-6 mb-2 mb-md-0">
+                <input type="date" name="fechaFin" class="form-control" max="@fechaHoy" required>
+            </div>
+
+            <!-- Botón de Buscar -->
+            <div class="col-12 col-md-12 col-lg-12 mt-3">
+                <button type="submit" class="botonAmarillo text-white rounded-3 w-75 d-block mx-auto">Buscar</button>
+            </div>
+            <span class="text-danger">@ViewBag.Error</span>
+        </div>
+    </div>
+</form>
+
+<div class="container mt-3">
+    @if (Model.Movimientos != null && Model.Movimientos.Any())
+    {
+        <div class="table-responsive">
+            <table class="table table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th class="text-primary">ID</th>
+                        <th class="text-primary">Fecha</th>
+                        <th class="text-primary">Email Encargado</th>
+                        <th class="text-primary">Cantidad Movida</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var movimiento in Model.Movimientos)
+                    {
+                        <tr>
+                            <td>@movimiento.MovimientoId</td>
+                            <td>@movimiento.Fecha.ToShortDateString()</td>
+                            <td>@movimiento.EmailEncargado</td>
+                            <td class="@(movimiento.TipoMovimiento.EsAumento ? "text-success" : "text-danger")">@movimiento.CantidadMovida</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Paginación -->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center mt-2">
+                @if (Model.CurrentPage > 1)
+                {
+                    <li class="page-item">
+                        <a class="page-link color4 text-light" href="@Url.Action("ConsultaPorFecha", new { page = 1 })" aria-label="First">
+                            <span aria-hidden="true">&laquo;&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link color4 text-light" href="@Url.Action("ConsultaPorFecha", new { page = Model.CurrentPage - 1 })" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                }
+
+                @for (int i = 1; i <= Model.TotalPages; i++)
+                {
+                    <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                        <a class="page-link @(i == Model.CurrentPage ? "color3 text-light" : "bg-color4 text-light")" href="@Url.Action("ConsultaPorFecha", new { page = i })">@i</a>
+                    </li>
+                }
+
+                @if (Model.CurrentPage < Model.TotalPages)
+                {
+                    <li class="page-item">
+                        <a class="page-link color4 text-light" href="@Url.Action("ConsultaPorFecha", new { page = Model.CurrentPage + 1 })" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link color4 text-light" href="@Url.Action("ConsultaPorFecha", new { page = Model.TotalPages })" aria-label="Last">
+                            <span aria-hidden="true">&raquo;&raquo;</span>
+                        </a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    }
+    else
+    {
+        <p>No existen movimientos en el rango de fechas especificado.</p>
+    }
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

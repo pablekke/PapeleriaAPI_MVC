@@ -1,0 +1,69 @@
+﻿@model ListarArticulosViewModel
+
+@{
+    Layout = "_LayoutEncargado";
+    ViewData["Title"] = "Articulos";
+    var mensajeExito = TempData["MensajeExito"] as string;
+    var mensajeEliminacionExitosa = TempData["EliminacionExitosa"] as string;
+}
+@if (!string.IsNullOrEmpty(mensajeExito) || !string.IsNullOrEmpty(mensajeEliminacionExitosa))
+{
+    <script>
+        $(document).ready(function () {
+            showToast('@mensajeExito', '@mensajeEliminacionExitosa');
+        });
+    </script>
+}
+<div class="container my-2">
+    <div class="justify-content-between row d-flex align-items-center">
+        <h1 class="col-8 text-light">@ViewData["Title"]</h1>
+        <div class="col-12 text-center col-md-4">
+            <a href="@Url.Action("Registro", "Articulo")" class="botonVerde text-light">
+                + Crear artículo
+            </a>
+        </div>
+    </div>
+</div>
+<form asp-action="Articulos" method="get" class="bg-search rounded py-3 px-1 mb-2">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Cuadro de búsqueda -->
+            <div class="col-12 col-md-4 col-lg-4 mb-2 mb-md-0">
+                <input type="text" name="nombre" class="form-control" placeholder="🔍 Buscar nombre..." style="background-color: #EEE7DA;">
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 mb-2 mb-md-0">
+                <input type="number" name="monto" class="form-control no-arrows" placeholder="💲 Buscar por monto..." style="background-color: #EEE7DA;">
+            </div>
+            <!-- Botón de filtrar -->
+            <div class="col-12 col-md-4 col-lg-4">
+                <button type="submit" class="botonAmarillo text-white rounded-3 w-100">Filtrar</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div class="row">
+    @foreach (var articulo in Model.Articulos)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="carta h-100">
+                <div class="card-header bg-dark text-light">
+                    <h4 class="m-0">@articulo.Nombre</h4>
+                </div>
+                <div class="card-body bg-dark text-light">
+                    <p>@articulo.Descripcion</p>
+                    <p><strong>Código:</strong> @articulo.Codigo</p>
+                    <p><strong>Precio:</strong> $@articulo.Precio</p>
+                </div>
+                <div class="card-footer bg-dark d-flex justify-content-around">
+                    <a href="@Url.Action("Editar", new { id = articulo.ArticuloId })" class="btn btn-primary">
+                        Editar <i class="fa fa-pencil-alt"></i>
+                    </a>
+                    <a href="@Url.Action("Borrar", new { id = articulo.ArticuloId })" class="btn btn-danger" onclick="return confirm('¿Estás seguro de querer eliminar este artículo?');" title="Eliminar">
+                        Eliminar <i class="fa fa-trash"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
