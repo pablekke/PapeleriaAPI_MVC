@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pableke\\Downloads\\E-180017-0\\Obligatorio 2\\WebAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F13EE25B-863B-4592-95F1-31F793EE2202}|Services\\Services.csproj|c:\\users\\pableke\\downloads\\e-180017-0\\obligatorio 2\\webapi\\services\\general\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F13EE25B-863B-4592-95F1-31F793EE2202}|Services\\Services.csproj|solutionrelative:services\\general\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B110D5AC-F6DA-465C-898A-37B1335ABE18}|DataAccess\\DataAccess.csproj|c:\\users\\pableke\\downloads\\e-180017-0\\obligatorio 2\\webapi\\dataaccess\\dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B110D5AC-F6DA-465C-898A-37B1335ABE18}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80ED3AE7-0DF9-419E-988A-F63A82886B1A}|Presentation\\Presentation.csproj|c:\\users\\pableke\\downloads\\e-180017-0\\obligatorio 2\\webapi\\presentation\\controllers\\encargadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80ED3AE7-0DF9-419E-988A-F63A82886B1A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\encargadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 487,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Servicio.cs",
+              "DocumentMoniker": "C:\\Users\\pableke\\Downloads\\E-180017-0\\Obligatorio 2\\WebAPI\\Services\\General\\Servicio.cs",
+              "RelativeDocumentMoniker": "Services\\General\\Servicio.cs",
+              "ToolTip": "C:\\Users\\pableke\\Downloads\\E-180017-0\\Obligatorio 2\\WebAPI\\Services\\General\\Servicio.cs",
+              "RelativeToolTip": "Services\\General\\Servicio.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA2wCwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T21:04:50.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataAccess",
+              "DocumentMoniker": "C:\\Users\\pableke\\Downloads\\E-180017-0\\Obligatorio 2\\WebAPI\\DataAccess\\DataAccess.csproj",
+              "RelativeDocumentMoniker": "DataAccess\\DataAccess.csproj",
+              "ToolTip": "C:\\Users\\pableke\\Downloads\\E-180017-0\\Obligatorio 2\\WebAPI\\DataAccess\\DataAccess.csproj",
+              "RelativeToolTip": "DataAccess\\DataAccess.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-20T21:04:25.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EncargadoController.cs",
+              "DocumentMoniker": "C:\\Users\\pableke\\Downloads\\E-180017-0\\Obligatorio 2\\WebAPI\\Presentation\\Controllers\\EncargadoController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\EncargadoController.cs",
+              "ToolTip": "C:\\Users\\pableke\\Downloads\\E-180017-0\\Obligatorio 2\\WebAPI\\Presentation\\Controllers\\EncargadoController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\EncargadoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T21:03:59.81Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -38,9 +38,9 @@ namespace Services
 
             var original = _repositorio.GetPorId(id);
             var actualizado = _mapeador.Map<Modelo>(dto);
-            actualizado.Validar();
 
             original.Copiar(actualizado);
+            original.Validar();
             _repositorio.Actualizar(original);
         }
         public List<DTO> GetAll()

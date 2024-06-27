@@ -1,0 +1,95 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MVC
+build_property.RootNamespace = MVC
+build_property.ProjectDir = C:\Users\pableke\Downloads\E-180017-0\Obligatorio 2\PapeleriaMVC\MVC\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\pableke\Downloads\E-180017-0\Obligatorio 2\PapeleriaMVC\MVC
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/pableke/Downloads/E-180017-0/Obligatorio 2/PapeleriaMVC/MVC/Views/Articulo/Articulos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWN1bG9cQXJ0aWN1bG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pableke/Downloads/E-180017-0/Obligatorio 2/PapeleriaMVC/MVC/Views/Articulo/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWN1bG9cRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pableke/Downloads/E-180017-0/Obligatorio 2/PapeleriaMVC/MVC/Views/Articulo/Registro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWN1bG9cUmVnaXN0cm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pableke/Downloads/E-180017-0/Obligatorio 2/PapeleriaMVC/MVC/Views/Encargado/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jYXJnYWRvXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pableke/Downloads/E-180017-0/Obligatorio 2/PapeleriaMVC/MVC/Views/Encargado/Encargados.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jYXJnYWRvXEVuY2FyZ2Fkb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pableke/Downloads/E-180017-0/Obligatorio 2/PapeleriaMVC/MVC/Views/Encargado/Registro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jYXJnYWRvXFJlZ2lzdHJvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pableke/Downloads/E-180017-0/Obligatorio 2/PapeleriaMVC/MVC/Views/Login/LogIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9nSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pableke/Downloads/E-180017-0/Obligatorio 2/PapeleriaMVC/MVC/Views/Movimientos/ConsultaPorArticuloYTipo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b3NcQ29uc3VsdGFQb3JBcnRpY3Vsb1lUaXBvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pableke/Downloads/E-180017-0/Obligatorio 2/PapeleriaMVC/MVC/Views/Movimientos/ConsultaPorFecha.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b3NcQ29uc3VsdGFQb3JGZWNoYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pableke/Downloads/E-180017-0/Obligatorio 2/PapeleriaMVC/MVC/Views/Movimientos/Movimientos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b3NcTW92aW1pZW50b3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pableke/Downloads/E-180017-0/Obligatorio 2/PapeleriaMVC/MVC/Views/Movimientos/Registro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b3NcUmVnaXN0cm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pableke/Downloads/E-180017-0/Obligatorio 2/PapeleriaMVC/MVC/Views/Movimientos/Resumen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b3NcUmVzdW1lbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pableke/Downloads/E-180017-0/Obligatorio 2/PapeleriaMVC/MVC/Views/Parametros/Configurar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyYW1ldHJvc1xDb25maWd1cmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pableke/Downloads/E-180017-0/Obligatorio 2/PapeleriaMVC/MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pableke/Downloads/E-180017-0/Obligatorio 2/PapeleriaMVC/MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pableke/Downloads/E-180017-0/Obligatorio 2/PapeleriaMVC/MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pableke/Downloads/E-180017-0/Obligatorio 2/PapeleriaMVC/MVC/Views/Shared/_LayoutEncargado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRFbmNhcmdhZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ojbsmzsri6
